@@ -1,0 +1,26 @@
+# ~/.config/i3/config
+
+# Example keybinding for dmenu (Super + D)
+# You can change $mod+d to any key combination you prefer.
+
+# Your dmenu configuration options:
+# Normal background: #272E33
+# Normal foreground: #dddddd (Chosen to contrast with dark background)
+# Selected background: #007799 (Chosen as a distinct accent color)
+# Selected foreground: #ffffff (Chosen to contrast with selected background)
+# Font: Meslo LGM Nerd Font (Remember to verify exact name with fc-list)
+# Case-insensitive search
+# Prompt: RUN:
+
+# Option 1: Horizontal Layout (default dmenu style)
+# Uncomment the line below if you want the horizontal layout
+# bindsym $mod+d exec --no-startup-id dmenu_run -nb '#272E33' -nf '#dddddd' -sb '#007799' -sf '#ffffff' -fn 'Meslo LGM Nerd Font:pixelsize=11' -i -p "RUN:"
+
+# Option 2: Vertical Layout (as a list of 10 lines)
+# Uncomment the line below if you want the vertical list layout (you can change 10 to any number)
+bindsym $mod+d exec --no-startup-id dmenu_run -nb '#272E33' -nf '#dddddd' -sb '#007799' -sf '#ffffff' -fn 'Meslo LGM Nerd Font:pixelsize=11' -i -p "RUN:" -l 10
+
+# Note: I've included a font size of 11px in the -fn flag example ('Meslo LGM Nerd Font:pixelsize=11').
+# You might need to adjust the font name and size specification based on how your font is installed and how you prefer it.
+# Use 'fc-list : family' to verify the font family name.
+# You can also specify size like 'Meslo LGM Nerd Font:size=10' depending on how fontconfig is set up.
